@@ -1,0 +1,104 @@
+#+TITLE: Emacs
+#+AUTHOR: Takahashi
+#+OPTIONS: ^:nil
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+
+#+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="http://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+
+* エディタ
+** 注意
+   *これはポエムです．*
+** 選択肢
+   今日において，プログラミングをするに当たり十分実用に耐えうるエディタは多く存在する．
+
+   - Vim
+   - NeoVim
+   - Emacs
+   - Sublime Text
+   - Atom
+   - VS Code
+   - 秀丸エディタ
+   - サクラエディタ
+   - IDE
+     - Eclipse
+     - IntelliJ IDEA
+     - Visual Studio
+   
+   もし，特にこだわりがあるわけでもなく，テキストを編集に加えて便利な機能を簡単に追加できたらいいなーと考えているなら，
+
+   - Sublime Text
+   - Atom
+   - VS Code
+
+   から選ぶのが無難だと思われる．
+* Emacs
+** 派生
+   Emacs には多くの派生が存在する．
+   自分がよく聞く Emacs の派生を列挙した．
+
+   - [[https://www.gnu.org/software/emacs/][GNU Emacs]] \\
+     Emacs の中で最も使われている派生物．\\
+     Vim と違い公式サイトがモダンなデザイン．
+   - [[https://www.xemacs.org/][XEmacs]] \\     
+     GNU Emacs からフォークされて派生したもの．
+   - [[https://github.com/chuntaro/NTEmacs64][NTEmacs64]] \\     
+     NTEmacs は Windows 用にビルドした GNU Emacs の総称．\\ 
+     NTEmacs64 は公式が配布している 64bit 版ビルドにパッチを当てたもの．
+   - [[http://th.nao.ac.jp/MEMBER/zenitani/emacs-j.html][Carbon Emacs]] \\     
+     Mac OS X の Aqua ウィンドウ環境で動作する Emacs の総称．\\
+     よくわからない．
+   
+     ここでは，GNU Emacs を対象として話を進めていく．
+** Emacs 小指
+   Emacs ではコントロールキーを多様する．
+   そのため，世間では Emacs を使うと小指が腱鞘炎になるという噂があるが，いくつか軽減する方法が存在する．
+
+   1. =CapsLock= に =Control= を割り当てる（ =A= の隣に =Control= を割り当てる） \\
+      この方法は一般的な JIS 配列のキーボードで Emacs を使用するときに有効なもの．\\
+      US 配列や UNIX 配列のキーボードならば，始めから =A= の隣に =Control= が存在するため特に設定を行う必要はない．\\
+      Mac Book の場合は，JIS 配列ならば =A= の隣に =control= があり，US 配列ならば =A= の隣に =caps lock= があるだろう．\\
+      \\
+      この方法を実現するためには，Linux ならば =xmodmap= を利用し，macOS ならば =システム環境設定 > キーボード > 修飾キー…= から自由に設定することができる．\\
+      現に，自分は =caps lock= を潰して =control= を割り当てている．
+   2. 親指で押せる位置に =Control= を割り当てる \\
+      具体的には，変換・無変換が妥当なところだろう．\\
+      この方法はやったことがないため快適なのかどうか判断しかねるが，割り当てるなら無変換に =Control= だろうか？ \\
+      実際に行ってる人がいたら感想を聞きたい．
+   3. /*spacemacs*/ を使用する
+      最後はキーボードの設定ではなく，Emacs 本体の設定ファイルを弄ることで実現する．\\
+      [[https://github.com/syl20bnr/spacemacs][spacemacs]] は Vim と Emacs のいいとこ取りをしたようなエディタを実現しようという構想のもと生れたもの．\\
+      発想からして最強．最強のエディタ + 最強のエディタなわけだから．\\
+      人類は宗教戦争などしてないで，もっと早くこれを作るべきだったのだ．
+** TODO Emacs の基本
+** 初期化ファイル
+   Emacs をカスタマイズするとき Emacs Lisp を記述する．
+   設定ファイルは以下の順番で読み込まれる．
+   
+   1. =~/_emacs=
+   2. =~/.emacs=
+   3. =~/.emacs.el=
+   4. =~/.emacs.d/init.el=
+
+   いずれかの段階でファイルが存在した場合，それ以降は読み込まない？ \\
+   =~/_emacs= は特殊． MS-DOS では =.= から始まるファイルを作れないため．\\
+   そのため，現実的には =~/.emacs= ， =~/.emacs.el= ， =~/.emacs.d/init.el= から好きなものを使うのがよい．\\
+   おすすめは =~/.emacs.d/init.el= ．
+** パッケージの初期化
+   Emacs 25 以降では，初期化ファイルで =package.el= の初期化を行うことが推奨されている．
+
+   #+BEGIN_SRC emacs-lisp
+   (package-initialize)
+   #+END_SRC
+** パッケージ管理
+   Emacs のパッケージを管理する代表的な方法は次の 3 つだと思われる．
+
+   - package.el
+   - Cask
+   - El-get
+
+   
