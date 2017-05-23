@@ -4,8 +4,8 @@
 #+AUTHOR: Takahashi
 #+OPTIONS: ^:nil
 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+#+HTML_HEAD: <link rel="stylesheet" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
 
 #+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 #+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -71,14 +71,14 @@
       具体的には，変換・無変換が妥当なところだろう．\\
       この方法はやったことがないため快適なのかどうか判断しかねるが，割り当てるなら無変換に =Control= だろうか？ \\
       実際に行ってる人がいたら感想を聞きたい．
-   3. /*spacemacs*/ を使用する
+   3. /*spacemacs*/ を使用する \\
       最後はキーボードの設定ではなく，Emacs 本体の設定ファイルを弄ることで実現する．\\
       [[https://github.com/syl20bnr/spacemacs][spacemacs]] は Vim と Emacs のいいとこ取りをしたようなエディタを実現しようという構想のもと生れたもの．\\
       発想からして最強．最強のエディタ + 最強のエディタなわけだから．\\
       人類は宗教戦争などしてないで，もっと早くこれを作るべきだったのだ．
 ** TODO Emacs の基本
 ** 初期化ファイル
-   Emacs をカスタマイズするとき Emacs Lisp を記述する．
+   Emacs をカスタマイズするとき Emacs Lisp を記述する．\\
    設定ファイルは以下の順番で読み込まれる．
    
    1. =~/_emacs=
