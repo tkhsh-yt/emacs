@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-05-24 水 18:10 -->
+<!-- 2017-05-24 水 18:23 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Emacs</title>
@@ -239,24 +239,24 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org4de9846">1. エディタ</a>
+<li><a href="#org44b05a5">1. エディタ</a>
 <ul>
-<li><a href="#org8a944a1">1.1. 注意</a></li>
-<li><a href="#orgd67b43a">1.2. 選択肢</a></li>
+<li><a href="#org8094fca">1.1. 注意</a></li>
+<li><a href="#orgff72323">1.2. 選択肢</a></li>
 </ul>
 </li>
-<li><a href="#orgfc67f0a">2. Emacs</a>
+<li><a href="#org9e9032a">2. Emacs</a>
 <ul>
-<li><a href="#orgf477e09">2.1. 派生</a></li>
-<li><a href="#orgb544ab9">2.2. Emacs 小指</a></li>
-<li><a href="#orgd0f689c">2.3. <span class="todo TODO">TODO</span> Emacs の基本</a></li>
-<li><a href="#orga514fb0">2.4. 初期化ファイル</a></li>
-<li><a href="#org9140f39">2.5. パッケージの初期化</a></li>
-<li><a href="#org009da3c">2.6. パッケージ管理</a>
+<li><a href="#org4193d3e">2.1. 派生</a></li>
+<li><a href="#orgacc5ea0">2.2. Emacs 小指</a></li>
+<li><a href="#orga962292">2.3. <span class="todo TODO">TODO</span> Emacs の基本</a></li>
+<li><a href="#org0138f72">2.4. 初期化ファイル</a></li>
+<li><a href="#orgac3d3a0">2.5. パッケージの初期化</a></li>
+<li><a href="#orgf11ca1d">2.6. パッケージ管理</a>
 <ul>
-<li><a href="#org240dfb0">2.6.1. package.el</a></li>
-<li><a href="#org192d639">2.6.2. <span class="todo TODO">TODO</span> Cask</a></li>
-<li><a href="#orgd149f05">2.6.3. <span class="todo TODO">TODO</span> El-get</a></li>
+<li><a href="#org7fd58fd">2.6.1. package.el</a></li>
+<li><a href="#org6e13d85">2.6.2. <span class="todo TODO">TODO</span> Cask</a></li>
+<li><a href="#org338b389">2.6.3. <span class="todo TODO">TODO</span> El-get</a></li>
 </ul>
 </li>
 </ul>
@@ -265,21 +265,21 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org4de9846" class="outline-2">
-<h2 id="org4de9846"><span class="section-number-2">1</span> エディタ</h2>
+<div id="outline-container-org44b05a5" class="outline-2">
+<h2 id="org44b05a5"><span class="section-number-2">1</span> エディタ</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 
-<div id="outline-container-org8a944a1" class="outline-3">
-<h3 id="org8a944a1"><span class="section-number-3">1.1</span> 注意</h3>
+<div id="outline-container-org8094fca" class="outline-3">
+<h3 id="org8094fca"><span class="section-number-3">1.1</span> 注意</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 <b>これはポエムです．</b>
 </p>
 </div>
 </div>
-<div id="outline-container-orgd67b43a" class="outline-3">
-<h3 id="orgd67b43a"><span class="section-number-3">1.2</span> 選択肢</h3>
+<div id="outline-container-orgff72323" class="outline-3">
+<h3 id="orgff72323"><span class="section-number-3">1.2</span> 選択肢</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 今日において，プログラミングをするに当たり十分実用に耐えうるエディタは多く存在する．
@@ -318,16 +318,16 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orgfc67f0a" class="outline-2">
-<h2 id="orgfc67f0a"><span class="section-number-2">2</span> Emacs</h2>
+<div id="outline-container-org9e9032a" class="outline-2">
+<h2 id="org9e9032a"><span class="section-number-2">2</span> Emacs</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 日本語で Emacs に関する情報を得たいならば <a href="http://emacs-jp.github.io/">Emacs JP</a> を見るのがいいと思う．<br />
 ここで自分用に情報をまとめるにあたって，<a href="http://emacs-jp.github.io/">Emacs JP</a> を参考にしていく．
 </p>
 </div>
-<div id="outline-container-orgf477e09" class="outline-3">
-<h3 id="orgf477e09"><span class="section-number-3">2.1</span> 派生</h3>
+<div id="outline-container-org4193d3e" class="outline-3">
+<h3 id="org4193d3e"><span class="section-number-3">2.1</span> 派生</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Emacs には多くの派生が存在する．自分がよく聞く Emacs の派生を列挙した．
@@ -354,8 +354,8 @@ Mac OS X の Aqua ウィンドウ環境で動作する Emacs の総称．<br />
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb544ab9" class="outline-3">
-<h3 id="orgb544ab9"><span class="section-number-3">2.2</span> Emacs 小指</h3>
+<div id="outline-container-orgacc5ea0" class="outline-3">
+<h3 id="orgacc5ea0"><span class="section-number-3">2.2</span> Emacs 小指</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Emacs ではコントロールキーを多様する．そのため，世間では Emacs を使うと小指が腱鞘炎になるという噂があるが，いくつか軽減する方法が存在する．
@@ -381,11 +381,11 @@ Mac Book の場合は，JIS 配列ならば <code>A</code> の隣に <code>contr
 </ol>
 </div>
 </div>
-<div id="outline-container-orgd0f689c" class="outline-3">
-<h3 id="orgd0f689c"><span class="section-number-3">2.3</span> <span class="todo TODO">TODO</span> Emacs の基本</h3>
+<div id="outline-container-orga962292" class="outline-3">
+<h3 id="orga962292"><span class="section-number-3">2.3</span> <span class="todo TODO">TODO</span> Emacs の基本</h3>
 </div>
-<div id="outline-container-orga514fb0" class="outline-3">
-<h3 id="orga514fb0"><span class="section-number-3">2.4</span> 初期化ファイル</h3>
+<div id="outline-container-org0138f72" class="outline-3">
+<h3 id="org0138f72"><span class="section-number-3">2.4</span> 初期化ファイル</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Emacs をカスタマイズするとき Emacs Lisp を記述する．<br />
@@ -407,8 +407,8 @@ Emacs をカスタマイズするとき Emacs Lisp を記述する．<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org9140f39" class="outline-3">
-<h3 id="org9140f39"><span class="section-number-3">2.5</span> パッケージの初期化</h3>
+<div id="outline-container-orgac3d3a0" class="outline-3">
+<h3 id="orgac3d3a0"><span class="section-number-3">2.5</span> パッケージの初期化</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 Emacs 25 以降では，初期化ファイルで <code>package.el</code> の初期化を行うことが推奨されている．
@@ -420,8 +420,8 @@ Emacs 25 以降では，初期化ファイルで <code>package.el</code> の初�
 </div>
 </div>
 </div>
-<div id="outline-container-org009da3c" class="outline-3">
-<h3 id="org009da3c"><span class="section-number-3">2.6</span> パッケージ管理</h3>
+<div id="outline-container-orgf11ca1d" class="outline-3">
+<h3 id="orgf11ca1d"><span class="section-number-3">2.6</span> パッケージ管理</h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
 Emacs のパッケージを管理する代表的な方法は次の 3 つのいずれかを使うのがメジャーだと思われる．
@@ -438,8 +438,8 @@ Emacs のパッケージを管理する代表的な方法は次の 3 つのい�
 始めに言っておくと，この中から選ぶならば El-Get がおすすめ．
 </p>
 </div>
-<div id="outline-container-org240dfb0" class="outline-4">
-<h4 id="org240dfb0"><span class="section-number-4">2.6.1</span> package.el</h4>
+<div id="outline-container-org7fd58fd" class="outline-4">
+<h4 id="org7fd58fd"><span class="section-number-4">2.6.1</span> package.el</h4>
 <div class="outline-text-4" id="text-2-6-1">
 <p>
 Emacs 24 から標準で使えるパッケージ管理ツール．<br />
@@ -452,7 +452,7 @@ M-x package-install
 </pre>
 
 <p>
-を実行する．すると `Install package:` とミニバッファに表示される．ここで `TAB` を押すとパッケージの一覧が表示されるため，その中からインストールしたいパッケージを見つけ，パッケージ名を入力することでパッケージをインストールすることができる．<br />
+を実行する．すると <code>Install package:</code> とミニバッファに表示される．ここで <code>TAB</code> を押すとパッケージの一覧が表示されるため，その中からインストールしたいパッケージを見つけ，パッケージ名を入力することでパッケージをインストールすることができる．<br />
 また，パッケージを一覧から複数選択してインストール，アンインストールしたい場合には，
 </p>
 
@@ -607,19 +607,19 @@ M-x package-list-packages
 </ul>
 </div>
 </div>
-<div id="outline-container-org192d639" class="outline-4">
-<h4 id="org192d639"><span class="section-number-4">2.6.2</span> <span class="todo TODO">TODO</span> Cask</h4>
+<div id="outline-container-org6e13d85" class="outline-4">
+<h4 id="org6e13d85"><span class="section-number-4">2.6.2</span> <span class="todo TODO">TODO</span> Cask</h4>
 </div>
 
-<div id="outline-container-orgd149f05" class="outline-4">
-<h4 id="orgd149f05"><span class="section-number-4">2.6.3</span> <span class="todo TODO">TODO</span> El-get</h4>
+<div id="outline-container-org338b389" class="outline-4">
+<h4 id="org338b389"><span class="section-number-4">2.6.3</span> <span class="todo TODO">TODO</span> El-get</h4>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Takahashi</p>
-<p class="date">Created: 2017-05-24 水 18:10</p>
+<p class="date">Created: 2017-05-24 水 18:23</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
