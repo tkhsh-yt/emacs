@@ -144,6 +144,11 @@
     #+END_SRC
     
     この例では， =helm= がインストールされていない場合にのみ =helm= のインストールを行う．
+
+    *参考*
+    - [[http://emacs-jp.github.io/packages/package-management/package-el][Emacs JP - package.el]]
+    - [[http://qiita.com/catatsuy/items/5f1cd86e2522fd3384a0][Qiita - init-loader.el と package.el を導入して快適 Emacs ライフ]]
+    - [[http://blog.wagavulin.jp/entry/2016/07/04/211631][wagavulin's blog - package.el で自動インストール]]
 *** TODO Cask
     
 *** TODO El-get
