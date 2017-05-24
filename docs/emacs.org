@@ -1,5 +1,6 @@
 # -*- mode: org; coding: utf-8-unix -*-
-
+日本語で Emacs に関する情報を得たいならば [[http://emacs-jp.github.io/][Emacs JP]] を見るのがいいと思う．\\
+ここで自分用に情報をまとめるにあたって，[[http://emacs-jp.github.io/][Emacs JP]] を参考にしていく．
 ** 派生
    Emacs には多くの派生が存在する．
    自分がよく聞く Emacs の派生を列挙した．
@@ -58,10 +59,93 @@
    (package-initialize)
    #+END_SRC
 ** パッケージ管理
-   Emacs のパッケージを管理する代表的な方法は次の 3 つだと思われる．
+   Emacs のパッケージを管理する代表的な方法は次の 3 つのいずれかを使うのがメジャーだと思われる．
 
    - package.el
    - Cask
-   - El-get
+   - El-Get
 
-   
+   2015 年の記事のため，現在と状況は変わってきているかもしれないが，[[http://tarao.hatenablog.com/entry/20150221/1424518030][Cask はもう古い、これからは El-Get - いまどきの Emacs パッケージ管理]] に上に挙げた 3 つの特徴が説明されている．\\
+   始めに言っておくと，この中から選ぶならば El-Get がおすすめ．
+*** package.el
+    Emacs 24 から標準で使えるパッケージ管理ツール．\\
+    自分はまともに使ったことがないので， [[http://emacs-jp.github.io/packages/package-management/package-el.html][package.el]] を参考に進めてみる．\\
+    単体でパッケージをインストールする方法は簡単で，
+
+    #+BEGIN_SRC
+    M-x package-install
+    #+END_SRC
+
+    を実行する．すると `Install package:` とミニバッファに表示される．
+    ここで `TAB` を押すとパッケージの一覧が表示されるため，その中からインストールしたいパッケージを見つけ，パッケージ名を入力することでパッケージをインストールすることができる．\\
+    また，パッケージを一覧から複数選択してインストール，アンインストールしたい場合には，
+
+    #+BEGIN_SRC
+    M-x package-list-packages
+    #+END_SRC
+
+    を実行すると，パッケージの一覧が表示される．
+    
+    パッケージ一覧が表示されたときに行える操作は次のようになっている．
+    
+    
+    | キー     | 概要                               |
+    |----------+------------------------------------|
+    | =r=      | パッケージ一覧の更新               |
+    | =i=      | インストールマークをつける         |
+    | =d=      | 削除マークをつける                 |
+    | =~=      | 古いパッケージに削除マークをつける |
+    | =u=      | マークを除去する                   |
+    | =x=      | マークの実行                       |
+    | =?=      | パッケージの概要表示               |
+    | =U=      | アップグレード                     |
+    | =n=      | 次の行へ移動                       |
+    | =p=      | 前の行へ移動                       |
+    | =h=      | help                               |
+    | =q=, =z= | 終了                               |
+
+    =package.el= はデフォルトで [[http://elpa.gnu.org/packages/][elpha.gnu.org]] からパッケージを取得する．\\
+    見てもらえればわかるが，登録されているパッケージが少ない．\\
+    [[http://emacs-jp.github.io/packages/package-management/package-el.html][package.el]] で説明されているようにリポジトリを追加する．各リポジトリについては，リンク先を読むとわかる．
+
+    #+BEGIN_SRC emacs-lisp
+    (require 'package)
+
+    (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+    (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+    (add-to-list 'package-archives  '("marmalade" . "http://marmalade-repo.org/packages/") t)
+    (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+    
+    (package-initialize)
+    #+END_SRC
+    
+    =elpha= 以外のリポジトリからパッケージをインストールすることができるようになる．
+
+    起動時に自動で指定したパッケージをインストールするためには， =~/.emacs.d/init.el= に以下のように記述するとよい．
+    
+    #+BEGIN_SRC emacs-lisp    
+    (require 'package)
+    
+    (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+    (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+    (add-to-list 'package-archives  '("marmalade" . "http://marmalade-repo.org/packages/") t)
+    (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+    
+    (package-initialize)
+    
+    (defvar my-install-package
+      '(
+        helm
+        ))
+    
+    (dolist (pkg my-install-package)
+      (unless (package-installed-p pkg)
+        (package-install pkg)))
+    #+END_SRC
+    
+    この例では， =helm= がインストールされていない場合にのみ =helm= のインストールを行う．
+*** TODO Cask
+    
+*** TODO El-get
+
+    

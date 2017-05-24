@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-05-24 水 13:11 -->
+<!-- 2017-05-24 水 18:01 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Emacs</title>
@@ -239,41 +239,47 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orga8a8d84">1. エディタ</a>
+<li><a href="#orge35ce31">1. エディタ</a>
 <ul>
-<li><a href="#org49cd012">1.1. 注意</a></li>
-<li><a href="#org4a57813">1.2. 選択肢</a></li>
+<li><a href="#org4c8b9b9">1.1. 注意</a></li>
+<li><a href="#orge466e24">1.2. 選択肢</a></li>
 </ul>
 </li>
-<li><a href="#org1727aab">2. Emacs</a>
+<li><a href="#org6a9240e">2. Emacs</a>
 <ul>
-<li><a href="#org80d9198">2.1. 派生</a></li>
-<li><a href="#orgd82cfcc">2.2. Emacs 小指</a></li>
-<li><a href="#org4d5a9c5">2.3. <span class="todo TODO">TODO</span> Emacs の基本</a></li>
-<li><a href="#org08c765e">2.4. 初期化ファイル</a></li>
-<li><a href="#orgc534f63">2.5. パッケージの初期化</a></li>
-<li><a href="#orgf776c95">2.6. パッケージ管理</a></li>
+<li><a href="#org0563ca4">2.1. 派生</a></li>
+<li><a href="#org5c173b9">2.2. Emacs 小指</a></li>
+<li><a href="#orgb3bfa87">2.3. <span class="todo TODO">TODO</span> Emacs の基本</a></li>
+<li><a href="#org40ec71a">2.4. 初期化ファイル</a></li>
+<li><a href="#org400b9e1">2.5. パッケージの初期化</a></li>
+<li><a href="#orgb90b5db">2.6. パッケージ管理</a>
+<ul>
+<li><a href="#orgc808cbb">2.6.1. package.el</a></li>
+<li><a href="#org28479fd">2.6.2. <span class="todo TODO">TODO</span> Cask</a></li>
+<li><a href="#org1924445">2.6.3. <span class="todo TODO">TODO</span> El-get</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orga8a8d84" class="outline-2">
-<h2 id="orga8a8d84"><span class="section-number-2">1</span> エディタ</h2>
+<div id="outline-container-orge35ce31" class="outline-2">
+<h2 id="orge35ce31"><span class="section-number-2">1</span> エディタ</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 
-<div id="outline-container-org49cd012" class="outline-3">
-<h3 id="org49cd012"><span class="section-number-3">1.1</span> 注意</h3>
+<div id="outline-container-org4c8b9b9" class="outline-3">
+<h3 id="org4c8b9b9"><span class="section-number-3">1.1</span> 注意</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 <b>これはポエムです．</b>
 </p>
 </div>
 </div>
-<div id="outline-container-org4a57813" class="outline-3">
-<h3 id="org4a57813"><span class="section-number-3">1.2</span> 選択肢</h3>
+<div id="outline-container-orge466e24" class="outline-3">
+<h3 id="orge466e24"><span class="section-number-3">1.2</span> 選択肢</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 今日において，プログラミングをするに当たり十分実用に耐えうるエディタは多く存在する．
@@ -312,17 +318,19 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-org1727aab" class="outline-2">
-<h2 id="org1727aab"><span class="section-number-2">2</span> Emacs</h2>
+<div id="outline-container-org6a9240e" class="outline-2">
+<h2 id="org6a9240e"><span class="section-number-2">2</span> Emacs</h2>
 <div class="outline-text-2" id="text-2">
+<p>
+日本語で Emacs に関する情報を得たいならば <a href="http://emacs-jp.github.io/">Emacs JP</a> を見るのがいいと思う．<br />
+ここで自分用に情報をまとめるにあたって，<a href="http://emacs-jp.github.io/">Emacs JP</a> を参考にしていく．
+</p>
 </div>
-
-<div id="outline-container-org80d9198" class="outline-3">
-<h3 id="org80d9198"><span class="section-number-3">2.1</span> 派生</h3>
+<div id="outline-container-org0563ca4" class="outline-3">
+<h3 id="org0563ca4"><span class="section-number-3">2.1</span> 派生</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Emacs には多くの派生が存在する．
-自分がよく聞く Emacs の派生を列挙した．
+Emacs には多くの派生が存在する．自分がよく聞く Emacs の派生を列挙した．
 </p>
 
 <ul class="org-ul">
@@ -346,12 +354,11 @@ Mac OS X の Aqua ウィンドウ環境で動作する Emacs の総称．<br />
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd82cfcc" class="outline-3">
-<h3 id="orgd82cfcc"><span class="section-number-3">2.2</span> Emacs 小指</h3>
+<div id="outline-container-org5c173b9" class="outline-3">
+<h3 id="org5c173b9"><span class="section-number-3">2.2</span> Emacs 小指</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Emacs ではコントロールキーを多様する．
-そのため，世間では Emacs を使うと小指が腱鞘炎になるという噂があるが，いくつか軽減する方法が存在する．
+Emacs ではコントロールキーを多様する．そのため，世間では Emacs を使うと小指が腱鞘炎になるという噂があるが，いくつか軽減する方法が存在する．
 </p>
 
 <ol class="org-ol">
@@ -374,11 +381,11 @@ Mac Book の場合は，JIS 配列ならば <code>A</code> の隣に <code>contr
 </ol>
 </div>
 </div>
-<div id="outline-container-org4d5a9c5" class="outline-3">
-<h3 id="org4d5a9c5"><span class="section-number-3">2.3</span> <span class="todo TODO">TODO</span> Emacs の基本</h3>
+<div id="outline-container-orgb3bfa87" class="outline-3">
+<h3 id="orgb3bfa87"><span class="section-number-3">2.3</span> <span class="todo TODO">TODO</span> Emacs の基本</h3>
 </div>
-<div id="outline-container-org08c765e" class="outline-3">
-<h3 id="org08c765e"><span class="section-number-3">2.4</span> 初期化ファイル</h3>
+<div id="outline-container-org40ec71a" class="outline-3">
+<h3 id="org40ec71a"><span class="section-number-3">2.4</span> 初期化ファイル</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Emacs をカスタマイズするとき Emacs Lisp を記述する．<br />
@@ -400,38 +407,206 @@ Emacs をカスタマイズするとき Emacs Lisp を記述する．<br />
 </p>
 </div>
 </div>
-<div id="outline-container-orgc534f63" class="outline-3">
-<h3 id="orgc534f63"><span class="section-number-3">2.5</span> パッケージの初期化</h3>
+<div id="outline-container-org400b9e1" class="outline-3">
+<h3 id="org400b9e1"><span class="section-number-3">2.5</span> パッケージの初期化</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 Emacs 25 以降では，初期化ファイルで <code>package.el</code> の初期化を行うことが推奨されている．
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(package-initialize)
+<pre class="src src-emacs-lisp"><span style="color: #4f97d7;">(</span>package-initialize<span style="color: #4f97d7;">)</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgf776c95" class="outline-3">
-<h3 id="orgf776c95"><span class="section-number-3">2.6</span> パッケージ管理</h3>
+<div id="outline-container-orgb90b5db" class="outline-3">
+<h3 id="orgb90b5db"><span class="section-number-3">2.6</span> パッケージ管理</h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
-Emacs のパッケージを管理する代表的な方法は次の 3 つだと思われる．
+Emacs のパッケージを管理する代表的な方法は次の 3 つのいずれかを使うのがメジャーだと思われる．
 </p>
 
 <ul class="org-ul">
 <li>package.el</li>
 <li>Cask</li>
-<li>El-get</li>
+<li>El-Get</li>
 </ul>
+
+<p>
+2015 年の記事のため，現在と状況は変わってきているかもしれないが，<a href="http://tarao.hatenablog.com/entry/20150221/1424518030">Cask はもう古い、これからは El-Get - いまどきの Emacs パッケージ管理</a> に上に挙げた 3 つの特徴が説明されている．<br />
+始めに言っておくと，この中から選ぶならば El-Get がおすすめ．
+</p>
+</div>
+<div id="outline-container-orgc808cbb" class="outline-4">
+<h4 id="orgc808cbb"><span class="section-number-4">2.6.1</span> package.el</h4>
+<div class="outline-text-4" id="text-2-6-1">
+<p>
+Emacs 24 から標準で使えるパッケージ管理ツール．<br />
+自分はまともに使ったことがないので， <a href="http://emacs-jp.github.io/packages/package-management/package-el.html">package.el</a> を参考に進めてみる．<br />
+単体でパッケージをインストールする方法は簡単で，
+</p>
+
+<pre class="example">
+M-x package-install
+</pre>
+
+<p>
+を実行する．すると `Install package:` とミニバッファに表示される．ここで `TAB` を押すとパッケージの一覧が表示されるため，その中からインストールしたいパッケージを見つけ，パッケージ名を入力することでパッケージをインストールすることができる．<br />
+また，パッケージを一覧から複数選択してインストール，アンインストールしたい場合には，
+</p>
+
+<pre class="example">
+M-x package-list-packages
+</pre>
+
+<p>
+を実行すると，パッケージの一覧が表示される．
+</p>
+
+<p>
+パッケージ一覧が表示されたときに行える操作は次のようになっている．
+</p>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">キー</th>
+<th scope="col" class="org-left">概要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>r</code></td>
+<td class="org-left">パッケージ一覧の更新</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>i</code></td>
+<td class="org-left">インストールマークをつける</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>d</code></td>
+<td class="org-left">削除マークをつける</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>~</code></td>
+<td class="org-left">古いパッケージに削除マークをつける</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>u</code></td>
+<td class="org-left">マークを除去する</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>x</code></td>
+<td class="org-left">マークの実行</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>?</code></td>
+<td class="org-left">パッケージの概要表示</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>U</code></td>
+<td class="org-left">アップグレード</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>n</code></td>
+<td class="org-left">次の行へ移動</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>p</code></td>
+<td class="org-left">前の行へ移動</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>h</code></td>
+<td class="org-left">help</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>q</code>, <code>z</code></td>
+<td class="org-left">終了</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<code>package.el</code> はデフォルトで <a href="http://elpa.gnu.org/packages/">elpha.gnu.org</a> からパッケージを取得する．<br />
+見てもらえればわかるが，登録されているパッケージが少ない．<br />
+<a href="http://emacs-jp.github.io/packages/package-management/package-el.html">package.el</a> で説明されているようにリポジトリを追加する．各リポジトリについては，リンク先を読むとわかる．
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">require</span> '<span style="color: #a45bad;">package</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #4f97d7;">(</span>add-to-list 'package-archives '<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"melpa"</span> . <span style="color: #2d9574;">"https://melpa.org/packages/"</span><span style="color: #bc6ec5;">)</span> t<span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>add-to-list 'package-archives '<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"melpa-stable"</span> . <span style="color: #2d9574;">"https://stable.melpa.org/packages/"</span><span style="color: #bc6ec5;">)</span> t<span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>add-to-list 'package-archives  '<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"marmalade"</span> . <span style="color: #2d9574;">"http://marmalade-repo.org/packages/"</span><span style="color: #bc6ec5;">)</span> t<span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>add-to-list 'package-archives '<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"org"</span> . <span style="color: #2d9574;">"http://orgmode.org/elpa/"</span><span style="color: #bc6ec5;">)</span> t<span style="color: #4f97d7;">)</span>
+
+<span style="color: #4f97d7;">(</span>package-initialize<span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+<p>
+<code>elpha</code> 以外のリポジトリからパッケージをインストールすることができるようになる．
+</p>
+
+<p>
+起動時に自動で指定したパッケージをインストールするためには， <code>~/.emacs.d/init.el</code> に以下のように記述するとよい．
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">require</span> '<span style="color: #a45bad;">package</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #4f97d7;">(</span>add-to-list 'package-archives '<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"melpa"</span> . <span style="color: #2d9574;">"https://melpa.org/packages/"</span><span style="color: #bc6ec5;">)</span> t<span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>add-to-list 'package-archives '<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"melpa-stable"</span> . <span style="color: #2d9574;">"https://stable.melpa.org/packages/"</span><span style="color: #bc6ec5;">)</span> t<span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>add-to-list 'package-archives  '<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"marmalade"</span> . <span style="color: #2d9574;">"http://marmalade-repo.org/packages/"</span><span style="color: #bc6ec5;">)</span> t<span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>add-to-list 'package-archives '<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"org"</span> . <span style="color: #2d9574;">"http://orgmode.org/elpa/"</span><span style="color: #bc6ec5;">)</span> t<span style="color: #4f97d7;">)</span>
+
+<span style="color: #4f97d7;">(</span>package-initialize<span style="color: #4f97d7;">)</span>
+
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">defvar</span> <span style="color: #7590db;">my-install-package</span>
+  '<span style="color: #bc6ec5;">(</span>
+    helm
+    <span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">dolist</span> <span style="color: #bc6ec5;">(</span>pkg my-install-package<span style="color: #bc6ec5;">)</span>
+  <span style="color: #bc6ec5;">(</span><span style="color: #4f97d7; font-weight: bold;">unless</span> <span style="color: #2d9574;">(</span>package-installed-p pkg<span style="color: #2d9574;">)</span>
+    <span style="color: #2d9574;">(</span>package-install pkg<span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org28479fd" class="outline-4">
+<h4 id="org28479fd"><span class="section-number-4">2.6.2</span> <span class="todo TODO">TODO</span> Cask</h4>
+</div>
+
+<div id="outline-container-org1924445" class="outline-4">
+<h4 id="org1924445"><span class="section-number-4">2.6.3</span> <span class="todo TODO">TODO</span> El-get</h4>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Takahashi</p>
-<p class="date">Created: 2017-05-24 水 13:11</p>
+<p class="date">Created: 2017-05-24 水 18:01</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
