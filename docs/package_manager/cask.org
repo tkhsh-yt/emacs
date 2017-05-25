@@ -1,0 +1,103 @@
+# -*- mode: org; coding: utf-8-unix -*-
+
+[[https://github.com/cask/cask][Cask]] はファイルにインストールしたいパッケージ名を記述し，コマンドラインからコマンドを叩くことでパッケージをインストールする．\\
+**** インストール
+     インストールするには，
+
+     #+BEGIN_SRC
+     $ curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
+     #+END_SRC
+
+     を実行するか，macOS ならば
+
+     #+BEGIN_SRC
+     $ brew install cask
+     #+END_SRC
+
+     Homebrew でインストールすることもできる．\\
+     curl でインストールした場合，パスを通す必要があるかもしれない．
+
+**** 初期化
+     始めに =~/.emacs.d= で Cask を初期化する必要がある．
+     以下のコマンドを実行すると，
+
+     #+BEGIN_SRC
+     $ cd ~/.emacs.d
+     $ cask init
+     #+END_SRC
+     
+     =~/.emacs.d/Cask= というファイルが生成される．
+**** インストールするパッケージの指定
+     =Cask= ファイルには，最初からいくつかのパッケージが書かれている． \\
+     自分の環境で実行した場合に生成された =Cask= ファイルは以下のようになっていた．
+
+     #+BEGIN_SRC emacs-lisp
+
+     #+END_SRC
+
+     どれもメジャーな（？）パッケージで，あって困ることはないと思うので，特に消す必要はないだろう．\\
+     =Cask= ファイルを見るとわかるが，Caskではインストールしたいパッケージを
+
+     #+BEGIN_SRC emacs-lisp
+     (depends-on "package name") 
+     #+END_SRC
+
+     の形で記述する．バージョンの指定やリポジトリのURL を指定することもできる．
+
+     #+BEGIN_SRC emacs-lisp
+     (depends-on "package name" "version")
+     (depends-on "package name" :git "url")
+     #+END_SRC
+     
+     また，リポジトリの追加も行える．
+     
+     #+BEGIN_SRC emacs-lisp
+     (source repository)
+     #+END_SRC
+**** パッケージのインストール
+     =Cask= ファイルにインストールしたいパッケージを記述したら，
+
+     #+BEGIN_SRC
+     $ cd ~/.emacs.d
+     $ cask install
+     #+END_SRC
+
+     を実行すると，パッケージがインストールされる．
+**** Emacsの初期化ファイルの設定
+     Cask でインストールしたパッケージをEmacs から使えるようにするために， =~/.emacs.d/init.el= に次のコードを追加する必要がある．
+     
+     #+BEGIN_SRC emacs-lisp
+     ;; macOS の場合
+     (require 'cask)
+     ;; Linux の場合
+     ;; (require 'cask "~/.cask/cask.el")
+
+     (cask-initialize)
+     #+END_SRC
+
+     これにより，Cask でインストールしたパッケージがEmacs から利用可能になる．
+**** コマンド
+     
+     - パッケージのアップデート
+       
+       #+BEGIN_SRC
+       $ cask update
+       #+END_SRC
+
+     - Cask のアップグレード
+       
+       #+BEGIN_SRC
+       $ cask upgrade-cask
+       #+END_SRC
+
+     - 古くなったライブラリ一覧
+
+       #+BEGIN_SRC
+       $ cask outdated
+       #+END_SRC
+
+     - パッケージ一覧
+     *参考*
+
+     - [[http://vdeep.net/emacs-cask][vdeep - Emacs Cask でパッケージ管理してみよう]]
+     - [[http://qiita.com/toshiwo/items/84cfa5e940ffdd69afaa][Qiita - brew install caskした場合のcask.elの場所]]
