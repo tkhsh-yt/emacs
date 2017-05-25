@@ -105,6 +105,8 @@
      $ cask list
      #+END_SRC
 
+   より詳しいことは，[[http://cask.readthedocs.io/en/latest/index.html][Cask]] を見てください．
+
    *参考*
 
    - [[http://vdeep.net/emacs-cask][vdeep - Emacs Cask でパッケージ管理してみよう]]
