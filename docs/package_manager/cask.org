@@ -2,6 +2,8 @@
 
 * Cask
 [[https://github.com/cask/cask][Cask]] はファイルにインストールしたいパッケージ名を記述し，コマンドラインからコマンドを叩くことでパッケージをインストールする．\\
+パッケージ管理ツールとして紹介されることが多いが，プロジェクト管理用のツールの1つらしい．\\
+自分はパッケージ管理ツールとしての側面しか知らないため，ここでもその方向で説明していく．
 ** インストール
    インストールするには，
 
@@ -99,7 +101,12 @@
 
    - パッケージ一覧
 
+     #+BEGIN_SRC
+     $ cask list
+     #+END_SRC
+
    *参考*
 
    - [[http://vdeep.net/emacs-cask][vdeep - Emacs Cask でパッケージ管理してみよう]]
    - [[http://qiita.com/toshiwo/items/84cfa5e940ffdd69afaa][Qiita - brew install caskした場合のcask.elの場所]]
+   - [[http://kiririmode.hatenablog.jp/entry/20141228/1419762171][理系学生日記 - Cask とは何であるのか、および init.el が非常にシンプルになった件]]
