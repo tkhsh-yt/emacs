@@ -53,6 +53,8 @@
   =~/_emacs= は特殊． MS-DOS では =.= から始まるファイルを作れないため．\\
   そのため，現実的には =~/.emacs= ， =~/.emacs.el= ， =~/.emacs.d/init.el= から好きなものを使うのがよい．\\
   おすすめは =~/.emacs.d/init.el= ．
+  以降，初期化ファイルは =~/.emacs.d/init.el= を利用していると想定して書く．
+  また，全ての設定を初期化ファイルに書いていくが，初期化ファイルを分割する方法も後に説明する．
 * パッケージの初期化
   Emacs 25 以降では，初期化ファイルで =package.el= の初期化を行うことが推奨されている．
 
@@ -70,6 +72,6 @@
   始めに言っておくと，この中から選ぶならば El-Get がおすすめ．
   #+INCLUDE: package_manager/package.org
   #+INCLUDE: package_manager/cask.org
-** TODO El-get
+  #+INCLUDE: package_manager/el-get.org
 
     
