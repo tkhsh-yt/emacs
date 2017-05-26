@@ -5,7 +5,4 @@
 #+OPTIONS: ^:nil
 #+SETUPFILE: ./style.org
 
-* エディタ
-  #+INCLUDE: editor.org
-* Emacs
-  #+INCLUDE: emacs.org
+#+INCLUDE: emacs.org

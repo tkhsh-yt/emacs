@@ -1,4 +1,5 @@
 # -*- mode: org; coding: utf-8-unix -*-
+
 日本語で Emacs に関する情報を得たいならば [[http://emacs-jp.github.io/][Emacs JP]] を見るのがいいと思う．\\
 ここで自分用に情報をまとめるにあたって，[[http://emacs-jp.github.io/][Emacs JP]] を参考にしていく．
 * 派生
