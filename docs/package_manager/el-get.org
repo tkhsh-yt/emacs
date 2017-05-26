@@ -60,19 +60,19 @@ Github の [[https://github.com/dimitri/el-get][el-get]] の README.md を参考
 
 ** 基本的な使い方
    
-   - =M-x el-get-install=
+   - =M-x el-get-install= \\
      パッケージ名を指定してインストール．
-   - =M-x el-get remove=
+   - =M-x el-get remove= \\
      インストール済みパッケージの名前を指定してパッケージの削除．
-   - =M-x el-get-reinstall=
+   - =M-x el-get-reinstall= \\
      インストール済みパッケージの再インストール．
-   - =M-x el-get-self-update=
+   - =M-x el-get-self-update= \\
      El-Get 自身のアップデート．
-   - =M-x el-get-update=
+   - =M-x el-get-update= \\
      インストール済みのパッケージ名を指定して更新．
-   - =M-x el-get-update-all=
+   - =M-x el-get-update-all= \\
      インストール済みの全てのパッケージを更新．
-   - =M-x el-get-list-packages=
+   - =M-x el-get-list-packages= \\
      インストール可能なパッケージのリストを表示．
 
 ** パッケージの設定
