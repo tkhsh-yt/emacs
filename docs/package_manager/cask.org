@@ -2,7 +2,7 @@
 
 * Cask
 [[https://github.com/cask/cask][Cask]] はファイルにインストールしたいパッケージ名を記述し，コマンドラインからコマンドを叩くことでパッケージをインストールする．\\
-パッケージ管理ツールとして紹介されることが多いが，プロジェクト管理用のツールの1つらしい．\\
+パッケージ管理ツールとして紹介されることが多いが，プロジェクト管理用のツールの 1 つらしい．\\
 自分はパッケージ管理ツールとしての側面しか知らないため，ここでもその方向で説明していく．
 ** インストール
    インストールするには，
@@ -35,17 +35,43 @@
    自分の環境で実行した場合に生成された =Cask= ファイルは以下のようになっていた．
 
    #+BEGIN_SRC emacs-lisp
+   (source gnu)
+   (source melpa)
 
+   (depends-on "bind-key")
+   (depends-on "cask")
+   (depends-on "dash")
+   (depends-on "drag-stuff")
+   (depends-on "exec-path-from-shell")
+   (depends-on "expand-region")
+   (depends-on "f")
+   (depends-on "flycheck")
+   (depends-on "flycheck-cask")
+   (depends-on "htmlize")
+   (depends-on "idle-highlight-mode")
+   (depends-on "magit")
+   (depends-on "multiple-cursors")
+   (depends-on "nyan-mode")
+   (depends-on "pallet")
+   (depends-on "popwin")
+   (depends-on "prodigy")
+   (depends-on "projectile")
+   (depends-on "s")
+   (depends-on "smartparens")
+   (depends-on "smex")
+   (depends-on "use-package")
+   (depends-on "web-mode")
+   (depends-on "yasnippet")
    #+END_SRC
 
    どれもメジャーな（？）パッケージで，あって困ることはないと思うので，特に消す必要はないだろう．\\
-   =Cask= ファイルを見るとわかるが，Caskではインストールしたいパッケージを
+   =Cask= ファイルを見るとわかるが，Cask ではインストールしたいパッケージを
 
    #+BEGIN_SRC emacs-lisp
    (depends-on "package name") 
    #+END_SRC
 
-   の形で記述する．バージョンの指定やリポジトリのURL を指定することもできる．
+   の形で記述する．バージョンの指定やリポジトリの URL を指定することもできる．
 
    #+BEGIN_SRC emacs-lisp
    (depends-on "package name" "version")
@@ -66,8 +92,8 @@
    #+END_SRC
 
    を実行すると，パッケージがインストールされる．
-** Emacsの初期化ファイルの設定
-   Cask でインストールしたパッケージをEmacs から使えるようにするために， =~/.emacs.d/init.el= に次のコードを追加する必要がある．
+** Emacs の初期化ファイルの設定
+   Cask でインストールしたパッケージを Emacs から使えるようにするために， =~/.emacs.d/init.el= に次のコードを追加する必要がある．
      
    #+BEGIN_SRC emacs-lisp
    ;; macOS の場合
@@ -78,7 +104,7 @@
    (cask-initialize)
    #+END_SRC
 
-   これにより，Cask でインストールしたパッケージがEmacs から利用可能になる．
+   これにより，Cask でインストールしたパッケージが Emacs から利用可能になる．
 ** コマンド
      
    - パッケージのアップデート
@@ -107,8 +133,10 @@
 
    より詳しいことは，[[http://cask.readthedocs.io/en/latest/index.html][Cask]] を見てください．
 
+** TODO Pallet
+
    *参考*
 
    - [[http://vdeep.net/emacs-cask][vdeep - Emacs Cask でパッケージ管理してみよう]]
-   - [[http://qiita.com/toshiwo/items/84cfa5e940ffdd69afaa][Qiita - brew install caskした場合のcask.elの場所]]
+   - [[http://qiita.com/toshiwo/items/84cfa5e940ffdd69afaa][Qiita - brew install cask した場合の cask.el の場所]]
    - [[http://kiririmode.hatenablog.jp/entry/20141228/1419762171][理系学生日記 - Cask とは何であるのか、および init.el が非常にシンプルになった件]]
