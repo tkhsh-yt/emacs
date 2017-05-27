@@ -73,5 +73,6 @@
   #+INCLUDE: package_manager/package.org
   #+INCLUDE: package_manager/cask.org
   #+INCLUDE: package_manager/el-get.org
-
+* 設定
+  #+INCLUDE: init/basic.org
     

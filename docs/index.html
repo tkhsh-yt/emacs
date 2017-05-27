@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-05-26 金 13:07 -->
+<!-- 2017-05-27 土 15:26 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Emacs</title>
@@ -239,33 +239,38 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orga52ec67">1. 派生</a></li>
-<li><a href="#org3c2c47e">2. Emacs 小指</a></li>
-<li><a href="#orge39cba5">3. <span class="todo TODO">TODO</span> Emacs の基本</a></li>
-<li><a href="#org822bce5">4. 初期化ファイル</a></li>
-<li><a href="#org4e619db">5. パッケージの初期化</a></li>
-<li><a href="#org6fe88f5">6. パッケージ管理</a>
+<li><a href="#org5817fe7">1. 派生</a></li>
+<li><a href="#org2638e86">2. Emacs 小指</a></li>
+<li><a href="#org536d6df">3. <span class="todo TODO">TODO</span> Emacs の基本</a></li>
+<li><a href="#org670b95c">4. 初期化ファイル</a></li>
+<li><a href="#org0a7d181">5. パッケージの初期化</a></li>
+<li><a href="#orgee54318">6. パッケージ管理</a>
 <ul>
-<li><a href="#org97afe03">6.1. package.el</a></li>
-<li><a href="#orgde5ace7">6.2. Cask</a>
+<li><a href="#orge84ed3e">6.1. package.el</a></li>
+<li><a href="#org3b47821">6.2. Cask</a>
 <ul>
-<li><a href="#org866ce36">6.2.1. インストール</a></li>
-<li><a href="#org964bdd0">6.2.2. 初期化</a></li>
-<li><a href="#orgfffba6c">6.2.3. インストールするパッケージの指定</a></li>
-<li><a href="#org50d9365">6.2.4. パッケージのインストール</a></li>
-<li><a href="#org19f39f1">6.2.5. Emacs の初期化ファイルの設定</a></li>
-<li><a href="#org64d7bce">6.2.6. コマンド</a></li>
-<li><a href="#org868c59c">6.2.7. <span class="todo TODO">TODO</span> Pallet</a></li>
+<li><a href="#org6d8c0c5">6.2.1. インストール</a></li>
+<li><a href="#org6af3f05">6.2.2. 初期化</a></li>
+<li><a href="#org5733b67">6.2.3. インストールするパッケージの指定</a></li>
+<li><a href="#org2bd5dcd">6.2.4. パッケージのインストール</a></li>
+<li><a href="#orga009625">6.2.5. Emacs の初期化ファイルの設定</a></li>
+<li><a href="#orge1b2030">6.2.6. コマンド</a></li>
+<li><a href="#org9121a29">6.2.7. <span class="todo TODO">TODO</span> Pallet</a></li>
 </ul>
 </li>
-<li><a href="#org09ac60e">6.3. El-Get</a>
+<li><a href="#org4ccb20f">6.3. El-Get</a>
 <ul>
-<li><a href="#org24d824a">6.3.1. インストール</a></li>
-<li><a href="#org1dc3baf">6.3.2. パッケージの指定</a></li>
-<li><a href="#orga0b7583">6.3.3. 基本的な使い方</a></li>
-<li><a href="#org4b5a58f">6.3.4. パッケージの設定</a></li>
+<li><a href="#orgf921feb">6.3.1. インストール</a></li>
+<li><a href="#org3b4d710">6.3.2. パッケージの指定</a></li>
+<li><a href="#org42e740a">6.3.3. 基本的な使い方</a></li>
+<li><a href="#org3677fa0">6.3.4. パッケージの設定</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a href="#org8b6c6ae">7. 設定</a>
+<ul>
+<li><a href="#orgdd8beed">7.1. <span class="todo TODO">TODO</span> 基本的な設定</a></li>
 </ul>
 </li>
 </ul>
@@ -275,8 +280,8 @@ for the JavaScript code in this tag.
 日本語で Emacs に関する情報を得たいならば <a href="http://emacs-jp.github.io/">Emacs JP</a> を見るのがいいと思う．<br />
 ここで自分用に情報をまとめるにあたって，<a href="http://emacs-jp.github.io/">Emacs JP</a> を参考にしていく．
 </p>
-<div id="outline-container-orga52ec67" class="outline-2">
-<h2 id="orga52ec67"><span class="section-number-2">1</span> 派生</h2>
+<div id="outline-container-org5817fe7" class="outline-2">
+<h2 id="org5817fe7"><span class="section-number-2">1</span> 派生</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Emacs には多くの派生が存在する．自分がよく聞く Emacs の派生を列挙した．
@@ -303,8 +308,8 @@ Mac OS X の Aqua ウィンドウ環境で動作する Emacs の総称．<br />
 </ul>
 </div>
 </div>
-<div id="outline-container-org3c2c47e" class="outline-2">
-<h2 id="org3c2c47e"><span class="section-number-2">2</span> Emacs 小指</h2>
+<div id="outline-container-org2638e86" class="outline-2">
+<h2 id="org2638e86"><span class="section-number-2">2</span> Emacs 小指</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Emacs ではコントロールキーを多様する．そのため，世間では Emacs を使うと小指が腱鞘炎になるという噂があるが，いくつか軽減する方法が存在する．
@@ -330,11 +335,11 @@ Mac Book の場合は，JIS 配列ならば <code>A</code> の隣に <code>contr
 </ol>
 </div>
 </div>
-<div id="outline-container-orge39cba5" class="outline-2">
-<h2 id="orge39cba5"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> Emacs の基本</h2>
+<div id="outline-container-org536d6df" class="outline-2">
+<h2 id="org536d6df"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> Emacs の基本</h2>
 </div>
-<div id="outline-container-org822bce5" class="outline-2">
-<h2 id="org822bce5"><span class="section-number-2">4</span> 初期化ファイル</h2>
+<div id="outline-container-org670b95c" class="outline-2">
+<h2 id="org670b95c"><span class="section-number-2">4</span> 初期化ファイル</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Emacs をカスタマイズするとき Emacs Lisp を記述する．<br />
@@ -356,8 +361,8 @@ Emacs をカスタマイズするとき Emacs Lisp を記述する．<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org4e619db" class="outline-2">
-<h2 id="org4e619db"><span class="section-number-2">5</span> パッケージの初期化</h2>
+<div id="outline-container-org0a7d181" class="outline-2">
+<h2 id="org0a7d181"><span class="section-number-2">5</span> パッケージの初期化</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Emacs 25 以降では，初期化ファイルで <code>package.el</code> の初期化を行うことが推奨されている．
@@ -369,8 +374,8 @@ Emacs 25 以降では，初期化ファイルで <code>package.el</code> の初�
 </div>
 </div>
 </div>
-<div id="outline-container-org6fe88f5" class="outline-2">
-<h2 id="org6fe88f5"><span class="section-number-2">6</span> パッケージ管理</h2>
+<div id="outline-container-orgee54318" class="outline-2">
+<h2 id="orgee54318"><span class="section-number-2">6</span> パッケージ管理</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 Emacs のパッケージを管理する代表的な方法は次の 3 つのいずれかを使うのがメジャーだと思われる．
@@ -387,8 +392,8 @@ Emacs のパッケージを管理する代表的な方法は次の 3 つのい�
 始めに言っておくと，この中から選ぶならば El-Get がおすすめ．
 </p>
 </div>
-<div id="outline-container-org97afe03" class="outline-3">
-<h3 id="org97afe03"><span class="section-number-3">6.1</span> package.el</h3>
+<div id="outline-container-orge84ed3e" class="outline-3">
+<h3 id="orge84ed3e"><span class="section-number-3">6.1</span> package.el</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 Emacs 24 から標準で使えるパッケージ管理ツール．<br />
@@ -558,8 +563,8 @@ M-x package-list-packages
 </div>
 </div>
 
-<div id="outline-container-orgde5ace7" class="outline-3">
-<h3 id="orgde5ace7"><span class="section-number-3">6.2</span> Cask</h3>
+<div id="outline-container-org3b47821" class="outline-3">
+<h3 id="org3b47821"><span class="section-number-3">6.2</span> Cask</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 <a href="https://github.com/cask/cask">Cask</a> はファイルにインストールしたいパッケージ名を記述し，コマンドラインからコマンドを叩くことでパッケージをインストールする．<br />
@@ -567,8 +572,8 @@ M-x package-list-packages
 自分はパッケージ管理ツールとしての側面しか知らないため，ここでもその方向で説明していく．
 </p>
 </div>
-<div id="outline-container-org866ce36" class="outline-4">
-<h4 id="org866ce36"><span class="section-number-4">6.2.1</span> インストール</h4>
+<div id="outline-container-org6d8c0c5" class="outline-4">
+<h4 id="org6d8c0c5"><span class="section-number-4">6.2.1</span> インストール</h4>
 <div class="outline-text-4" id="text-6-2-1">
 <p>
 インストールするには，
@@ -593,8 +598,8 @@ curl でインストールした場合，パスを通す必要があるかもし
 </div>
 </div>
 
-<div id="outline-container-org964bdd0" class="outline-4">
-<h4 id="org964bdd0"><span class="section-number-4">6.2.2</span> 初期化</h4>
+<div id="outline-container-org6af3f05" class="outline-4">
+<h4 id="org6af3f05"><span class="section-number-4">6.2.2</span> 初期化</h4>
 <div class="outline-text-4" id="text-6-2-2">
 <p>
 始めに <code>~/.emacs.d</code> で Cask を初期化する必要がある．以下のコマンドを実行すると，
@@ -610,8 +615,8 @@ $ cask init
 </p>
 </div>
 </div>
-<div id="outline-container-orgfffba6c" class="outline-4">
-<h4 id="orgfffba6c"><span class="section-number-4">6.2.3</span> インストールするパッケージの指定</h4>
+<div id="outline-container-org5733b67" class="outline-4">
+<h4 id="org5733b67"><span class="section-number-4">6.2.3</span> インストールするパッケージの指定</h4>
 <div class="outline-text-4" id="text-6-2-3">
 <p>
 <code>Cask</code> ファイルには，最初からいくつかのパッケージが書かれている． <br />
@@ -679,8 +684,8 @@ $ cask init
 </div>
 </div>
 </div>
-<div id="outline-container-org50d9365" class="outline-4">
-<h4 id="org50d9365"><span class="section-number-4">6.2.4</span> パッケージのインストール</h4>
+<div id="outline-container-org2bd5dcd" class="outline-4">
+<h4 id="org2bd5dcd"><span class="section-number-4">6.2.4</span> パッケージのインストール</h4>
 <div class="outline-text-4" id="text-6-2-4">
 <p>
 <code>Cask</code> ファイルにインストールしたいパッケージを記述したら，
@@ -696,8 +701,8 @@ $ cask install
 </p>
 </div>
 </div>
-<div id="outline-container-org19f39f1" class="outline-4">
-<h4 id="org19f39f1"><span class="section-number-4">6.2.5</span> Emacs の初期化ファイルの設定</h4>
+<div id="outline-container-orga009625" class="outline-4">
+<h4 id="orga009625"><span class="section-number-4">6.2.5</span> Emacs の初期化ファイルの設定</h4>
 <div class="outline-text-4" id="text-6-2-5">
 <p>
 Cask でインストールしたパッケージを Emacs から使えるようにするために， <code>~/.emacs.d/init.el</code> に次のコードを追加する必要がある．
@@ -718,8 +723,8 @@ Cask でインストールしたパッケージを Emacs から使えるよう�
 </p>
 </div>
 </div>
-<div id="outline-container-org64d7bce" class="outline-4">
-<h4 id="org64d7bce"><span class="section-number-4">6.2.6</span> コマンド</h4>
+<div id="outline-container-orge1b2030" class="outline-4">
+<h4 id="orge1b2030"><span class="section-number-4">6.2.6</span> コマンド</h4>
 <div class="outline-text-4" id="text-6-2-6">
 <ul class="org-ul">
 <li><p>
@@ -761,8 +766,8 @@ $ cask list
 </div>
 </div>
 
-<div id="outline-container-org868c59c" class="outline-4">
-<h4 id="org868c59c"><span class="section-number-4">6.2.7</span> <span class="todo TODO">TODO</span> Pallet</h4>
+<div id="outline-container-org9121a29" class="outline-4">
+<h4 id="org9121a29"><span class="section-number-4">6.2.7</span> <span class="todo TODO">TODO</span> Pallet</h4>
 <div class="outline-text-4" id="text-6-2-7">
 <p>
 <b>参考</b>
@@ -777,8 +782,8 @@ $ cask list
 </div>
 </div>
 
-<div id="outline-container-org09ac60e" class="outline-3">
-<h3 id="org09ac60e"><span class="section-number-3">6.3</span> El-Get</h3>
+<div id="outline-container-org4ccb20f" class="outline-3">
+<h3 id="org4ccb20f"><span class="section-number-3">6.3</span> El-Get</h3>
 <div class="outline-text-3" id="text-6-3">
 <p>
 El-Get は Cask が Python に依存しているのに対して Emacs Lisp のみで実装されている．<br />
@@ -791,8 +796,8 @@ Github の <a href="https://github.com/dimitri/el-get">el-get</a> の README.md 
 </p>
 </div>
 
-<div id="outline-container-org24d824a" class="outline-4">
-<h4 id="org24d824a"><span class="section-number-4">6.3.1</span> インストール</h4>
+<div id="outline-container-orgf921feb" class="outline-4">
+<h4 id="orgf921feb"><span class="section-number-4">6.3.1</span> インストール</h4>
 <div class="outline-text-4" id="text-6-3-1">
 <p>
 <code>~/.emacs.d/init.el</code> に以下のコードを追加する．
@@ -819,8 +824,8 @@ El-Get のインストールに必要なことはこれだけである．この�
 </div>
 </div>
 
-<div id="outline-container-org1dc3baf" class="outline-4">
-<h4 id="org1dc3baf"><span class="section-number-4">6.3.2</span> パッケージの指定</h4>
+<div id="outline-container-org3b4d710" class="outline-4">
+<h4 id="org3b4d710"><span class="section-number-4">6.3.2</span> パッケージの指定</h4>
 <div class="outline-text-4" id="text-6-3-2">
 <p>
 El-Get でインストールするパッケージを指定する方法は，
@@ -864,8 +869,8 @@ El-Get でインストールするパッケージを指定する方法は，
 </div>
 </div>
 
-<div id="outline-container-orga0b7583" class="outline-4">
-<h4 id="orga0b7583"><span class="section-number-4">6.3.3</span> 基本的な使い方</h4>
+<div id="outline-container-org42e740a" class="outline-4">
+<h4 id="org42e740a"><span class="section-number-4">6.3.3</span> 基本的な使い方</h4>
 <div class="outline-text-4" id="text-6-3-3">
 <ul class="org-ul">
 <li><code>M-x el-get-install</code> <br />
@@ -886,8 +891,8 @@ El-Get 自身のアップデート．</li>
 </div>
 </div>
 
-<div id="outline-container-org4b5a58f" class="outline-4">
-<h4 id="org4b5a58f"><span class="section-number-4">6.3.4</span> パッケージの設定</h4>
+<div id="outline-container-org3677fa0" class="outline-4">
+<h4 id="org3677fa0"><span class="section-number-4">6.3.4</span> パッケージの設定</h4>
 <div class="outline-text-4" id="text-6-3-4">
 <p>
 El-Get にはインストールしたパッケージに対する設定をわかりやすく管理するための機能があります．<br />
@@ -897,10 +902,114 @@ El-Get にはインストールしたパッケージに対する設定をわか�
 </div>
 </div>
 </div>
+<div id="outline-container-org8b6c6ae" class="outline-2">
+<h2 id="org8b6c6ae"><span class="section-number-2">7</span> 設定</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+
+<div id="outline-container-orgdd8beed" class="outline-3">
+<h3 id="orgdd8beed"><span class="section-number-3">7.1</span> <span class="todo TODO">TODO</span> 基本的な設定</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+ここでは，Emacs を使っている多くの人が行っているであろう基本的な設定をする．つまり，追加でダウンロードしたパッケージに関する設定ではなく，Emacs 本体のみに対して適用される設定についてのみ触れる． <br />
+既に少しだけ書いているが，Emacs の設定は Emacs Lisp と呼ばれる Lisp の方言の一つを用いて行う．<br />
+以下のコードを初期化ファイルに追加で記述する．
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#36215;&#21205;&#26178;&#12395;&#12513;&#12483;&#12475;&#12540;&#12472;&#12434;&#34920;&#31034;&#12375;&#12394;&#12356;&#12424;&#12358;&#12395;&#12377;&#12427;</span>
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">setq</span> inhibit-start-up-messege t<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#35328;&#35486;&#12434;&#26085;&#26412;&#35486;&#12395;&#12377;&#12427;</span>
+<span style="color: #4f97d7;">(</span>set-language-environment 'Japanese<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">UTF-8</span>
+<span style="color: #4f97d7;">(</span>set-default 'buffer-file-coding-system 'utf-8-with-signature<span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>prefer-coding-system 'utf-8<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#12484;&#12540;&#12523;&#12496;&#12540;&#12398;&#38750;&#34920;&#31034;</span>
+<span style="color: #4f97d7;">(</span>tool-bar-mode <span style="color: #a45bad;">0</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#12513;&#12491;&#12517;&#12540;&#12496;&#12540;&#12398;&#38750;&#34920;&#31034;</span>
+<span style="color: #4f97d7;">(</span>menu-bar-mode <span style="color: #a45bad;">0</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#12480;&#12452;&#12450;&#12525;&#12464;&#12434;&#20351;&#12431;&#12394;&#12356;&#12424;&#12358;&#12395;&#12377;&#12427;</span>
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">setq</span> use-dialog-box nil<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#23550;&#24540;&#12377;&#12427;&#25324;&#24359;&#12434;&#24375;&#35519;&#12377;&#12427;</span>
+<span style="color: #4f97d7;">(</span>show-paren-mode t<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#29694;&#22312;&#34892;&#12434;&#30446;&#31435;&#12383;&#12379;&#12427;</span>
+<span style="color: #4f97d7;">(</span>global-hl-line-mode t<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#34892;&#30058;&#21495;&#12434;&#34920;&#31034;&#12377;&#12427;</span>
+<span style="color: #4f97d7;">(</span>global-linum-mode t<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#12473;&#12463;&#12525;&#12540;&#12523;&#12496;&#12540;&#12398;&#38750;&#34920;&#31034;</span>
+<span style="color: #4f97d7;">(</span>scroll-bar-mode <span style="color: #a45bad;">0</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">yes/no &#12391;&#12399;&#12394;&#12367; y/n</span>
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">defalias</span> '<span style="color: #bc6ec5; font-weight: bold;">yes-or-no-p</span> 'y-or-n-p<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#12499;&#12540;&#12503;&#38899;&#65292;&#12501;&#12521;&#12483;&#12471;&#12517;&#12434;&#28040;&#12377;</span>
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">setq</span> ring-bell-function 'ignore<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">C-h &#12391;&#19968;&#25991;&#23383;&#21069;&#12434;&#28040;&#12377;</span>
+<span style="color: #4f97d7;">(</span>define-key key-translation-map <span style="color: #bc6ec5;">(</span>kbd <span style="color: #2d9574;">"C-h"</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">(</span>kbd <span style="color: #2d9574;">"&lt;DEL&gt;"</span><span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#12473;&#12463;&#12525;&#12540;&#12523;&#12434; 1 &#34892;&#12372;&#12392;&#12395;&#12377;&#12427;</span>
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">setq</span> scroll-conservatively <span style="color: #a45bad;">1</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#12496;&#12483;&#12463;&#12450;&#12483;&#12503;&#12501;&#12449;&#12452;&#12523;&#12434;&#20316;&#12425;&#12394;&#12356;&#65288;&#12362;&#22909;&#12415;&#65289;</span>
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">setq</span> make-backup-files nil<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#32066;&#20102;&#26178;&#12395;&#12458;&#12540;&#12488;&#12475;&#12540;&#12502;&#12501;&#12449;&#12452;&#12523;&#12398;&#21066;&#38500;</span>
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">setq</span> delete-auto-save-files t<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#12454;&#12451;&#12531;&#12489;&#12454;&#12434;&#36879;&#36942;&#12377;&#12427;</span>
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">(&#12450;&#12463;&#12486;&#12451;&#12502;/&#38750;&#12450;&#12463;&#12486;&#12451;&#12502;)&#26178;&#12398;&#36879;&#36942;&#24230;</span>
+<span style="color: #4f97d7;">(</span>add-to-lisp 'default-frame-alist '<span style="color: #bc6ec5;">(</span>alpha . <span style="color: #2d9574;">(</span><span style="color: #a45bad;">0.8</span>, <span style="color: #a45bad;">0.8</span><span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span>
+</pre>
+</div>
+
+<p>
+この辺は多分，多くの人が設定していると思う．このサイトでは，後に helm と呼ばれる Emacs に統一的なインターフェースを提供するパッケージを紹介する．そのため，以下の設定はいらなくなると思うが，helm を使わない人もいると思うので，紹介しておく．
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#26908;&#32034;&#26178;&#12395;&#22823;&#25991;&#23383;&#65292;&#23567;&#25991;&#23383;&#12434;&#21306;&#21029;&#12375;&#12394;&#12356;</span>
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">setq</span> case-fold-search t<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#12452;&#12531;&#12463;&#12522;&#12513;&#12531;&#12479;&#12523;&#12469;&#12540;&#12481;&#26178;&#12395;&#22823;&#25991;&#23383;&#65292;&#23567;&#25991;&#23383;&#12434;&#21306;&#21029;&#12375;&#12394;&#12356;</span>
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">setq</span> isearch-case-fold-search t<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#12496;&#12483;&#12501;&#12449;&#12540;&#21517;&#26908;&#32034;&#12391;&#22823;&#25991;&#23383;&#65292;&#23567;&#25991;&#23383;&#12434;&#21306;&#21029;&#12375;&#12394;&#12356;</span>
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">setq</span> read-buffer-completion-ignore-case t<span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">&#12501;&#12449;&#12452;&#12523;&#21517;&#26908;&#32034;&#12391;&#22823;&#25991;&#23383;&#65292;&#23567;&#25991;&#23383;&#12434;&#21306;&#21029;&#12375;&#12394;&#12356;</span>
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">setq</span> read-file-name-completion-ignore-cast t<span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+<p>
+他にもおすすめの設定が沢山あると思うが，ここではこの辺にしておく．<br />
+この設定はしておいた方がいいというものがあったらプルリクを送って貰えると助かります．
+</p>
+
+<p>
+<b>参考</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="http://yohshiy.blog.fc2.com/blog-entry-191.html">プログラマーズ雑記帳 - Emacs の検索、置換における大文字小文字の区別の切り替え</a></li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Takahashi</p>
-<p class="date">Created: 2017-05-26 金 13:07</p>
+<p class="date">Created: 2017-05-27 土 15:26</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
