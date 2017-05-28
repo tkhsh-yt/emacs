@@ -76,3 +76,5 @@
 * 設定
   #+INCLUDE: init/basic.org
     
+* パッケージ
+  #+INCLUDE: package/package.org
