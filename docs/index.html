@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-07-12 水 21:09 -->
+<!-- 2017-07-12 水 21:13 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Emacs</title>
@@ -240,43 +240,43 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org5408a89">1. 派生</a></li>
-<li><a href="#org4726450">2. Emacs 小指</a></li>
-<li><a href="#orgd538631">3. <span class="todo TODO">TODO</span> Emacs の基本</a></li>
-<li><a href="#orgd0a2785">4. 初期化ファイル</a></li>
-<li><a href="#org8ccf1b3">5. パッケージの初期化</a></li>
-<li><a href="#org148409a">6. パッケージ管理</a>
+<li><a href="#orgdb4c9ed">1. 派生</a></li>
+<li><a href="#org075bcdc">2. Emacs 小指</a></li>
+<li><a href="#org1403859">3. <span class="todo TODO">TODO</span> Emacs の基本</a></li>
+<li><a href="#org34ecdb2">4. 初期化ファイル</a></li>
+<li><a href="#orgebd06e4">5. パッケージの初期化</a></li>
+<li><a href="#orgf2962d5">6. パッケージ管理</a>
 <ul>
-<li><a href="#orgd0b6ed8">6.1. package.el</a></li>
-<li><a href="#org1c07c32">6.2. Cask</a>
+<li><a href="#org36f608e">6.1. package.el</a></li>
+<li><a href="#org9a9bcf6">6.2. Cask</a>
 <ul>
-<li><a href="#org0e50ed6">6.2.1. インストール</a></li>
-<li><a href="#orgd2e9010">6.2.2. 初期化</a></li>
-<li><a href="#org599adae">6.2.3. インストールするパッケージの指定</a></li>
-<li><a href="#org0c2145c">6.2.4. パッケージのインストール</a></li>
-<li><a href="#orgfa55644">6.2.5. Emacs の初期化ファイルの設定</a></li>
-<li><a href="#org0c56dfe">6.2.6. コマンド</a></li>
-<li><a href="#org39c44b8">6.2.7. <span class="todo TODO">TODO</span> Pallet</a></li>
+<li><a href="#org49b19f1">6.2.1. インストール</a></li>
+<li><a href="#org609570b">6.2.2. 初期化</a></li>
+<li><a href="#orge841e92">6.2.3. インストールするパッケージの指定</a></li>
+<li><a href="#org86b01dd">6.2.4. パッケージのインストール</a></li>
+<li><a href="#org3c820a3">6.2.5. Emacs の初期化ファイルの設定</a></li>
+<li><a href="#orgb14b232">6.2.6. コマンド</a></li>
+<li><a href="#org7e477d1">6.2.7. <span class="todo TODO">TODO</span> Pallet</a></li>
 </ul>
 </li>
-<li><a href="#org499269b">6.3. El-Get</a>
+<li><a href="#orgac1b5ac">6.3. El-Get</a>
 <ul>
-<li><a href="#orgf0417f6">6.3.1. インストール</a></li>
-<li><a href="#org2251587">6.3.2. パッケージの指定</a></li>
-<li><a href="#orgc1c5320">6.3.3. 基本的な使い方</a></li>
-<li><a href="#org848a158">6.3.4. パッケージの設定</a></li>
+<li><a href="#orge67137f">6.3.1. インストール</a></li>
+<li><a href="#orge945cc9">6.3.2. パッケージの指定</a></li>
+<li><a href="#org1626d25">6.3.3. 基本的な使い方</a></li>
+<li><a href="#org7f8e333">6.3.4. パッケージの設定</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orge626dbd">7. 設定</a>
+<li><a href="#org2746072">7. 設定</a>
 <ul>
-<li><a href="#orgd99bdd3">7.1. <span class="todo TODO">TODO</span> 基本的な設定</a></li>
+<li><a href="#org47ab40c">7.1. <span class="todo TODO">TODO</span> 基本的な設定</a></li>
 </ul>
 </li>
-<li><a href="#org93cdf9e">8. パッケージ</a>
+<li><a href="#orgee018e6">8. パッケージ</a>
 <ul>
-<li><a href="#org8269191">8.1. 雑にパッケージ紹介</a></li>
+<li><a href="#org2b8a525">8.1. 雑にパッケージ紹介</a></li>
 </ul>
 </li>
 </ul>
@@ -286,8 +286,8 @@ for the JavaScript code in this tag.
 日本語で Emacs に関する情報を得たいならば <a href="http://emacs-jp.github.io/">Emacs JP</a> を見るのがいいと思う．<br />
 ここで自分用に情報をまとめるにあたって，<a href="http://emacs-jp.github.io/">Emacs JP</a> を参考にしていく．<br />
 </p>
-<div id="outline-container-org5408a89" class="outline-2">
-<h2 id="org5408a89"><span class="section-number-2">1</span> 派生</h2>
+<div id="outline-container-orgdb4c9ed" class="outline-2">
+<h2 id="orgdb4c9ed"><span class="section-number-2">1</span> 派生</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Emacs には多くの派生が存在する．<br />
@@ -315,8 +315,8 @@ Mac OS X の Aqua ウィンドウ環境で動作する Emacs の総称．<br />
 </ul>
 </div>
 </div>
-<div id="outline-container-org4726450" class="outline-2">
-<h2 id="org4726450"><span class="section-number-2">2</span> Emacs 小指</h2>
+<div id="outline-container-org075bcdc" class="outline-2">
+<h2 id="org075bcdc"><span class="section-number-2">2</span> Emacs 小指</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Emacs ではコントロールキーを多様する．<br />
@@ -347,11 +347,11 @@ Mac Book の場合は，JIS 配列ならば <code>A</code> の隣に <code>contr
 </ol>
 </div>
 </div>
-<div id="outline-container-orgd538631" class="outline-2">
-<h2 id="orgd538631"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> Emacs の基本</h2>
+<div id="outline-container-org1403859" class="outline-2">
+<h2 id="org1403859"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> Emacs の基本</h2>
 </div>
-<div id="outline-container-orgd0a2785" class="outline-2">
-<h2 id="orgd0a2785"><span class="section-number-2">4</span> 初期化ファイル</h2>
+<div id="outline-container-org34ecdb2" class="outline-2">
+<h2 id="org34ecdb2"><span class="section-number-2">4</span> 初期化ファイル</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Emacs をカスタマイズするとき Emacs Lisp を記述する．<br />
@@ -375,8 +375,8 @@ Emacs をカスタマイズするとき Emacs Lisp を記述する．<br />
 </p>
 </div>
 </div>
-<div id="outline-container-org8ccf1b3" class="outline-2">
-<h2 id="org8ccf1b3"><span class="section-number-2">5</span> パッケージの初期化</h2>
+<div id="outline-container-orgebd06e4" class="outline-2">
+<h2 id="orgebd06e4"><span class="section-number-2">5</span> パッケージの初期化</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Emacs 25 以降では，初期化ファイルで <code>package.el</code> の初期化を行うことが推奨されている．<br />
@@ -388,8 +388,8 @@ Emacs 25 以降では，初期化ファイルで <code>package.el</code> の初�
 </div>
 </div>
 </div>
-<div id="outline-container-org148409a" class="outline-2">
-<h2 id="org148409a"><span class="section-number-2">6</span> パッケージ管理</h2>
+<div id="outline-container-orgf2962d5" class="outline-2">
+<h2 id="orgf2962d5"><span class="section-number-2">6</span> パッケージ管理</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 Emacs のパッケージを管理する代表的な方法は次の 3 つのいずれかを使うのがメジャーだと思われる．<br />
@@ -406,8 +406,9 @@ Emacs のパッケージを管理する代表的な方法は次の 3 つのい�
 始めに言っておくと，この中から選ぶならば El-Get がおすすめ．<br />
 </p>
 </div>
-<div id="outline-container-orgd0b6ed8" class="outline-3">
-<h3 id="orgd0b6ed8"><span class="section-number-3">6.1</span> package.el</h3>
+
+<div id="outline-container-org36f608e" class="outline-3">
+<h3 id="org36f608e"><span class="section-number-3">6.1</span> package.el</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 Emacs 24 から標準で使えるパッケージ管理ツール．<br />
@@ -578,8 +579,8 @@ M-x package-list-packages
 </div>
 </div>
 
-<div id="outline-container-org1c07c32" class="outline-3">
-<h3 id="org1c07c32"><span class="section-number-3">6.2</span> Cask</h3>
+<div id="outline-container-org9a9bcf6" class="outline-3">
+<h3 id="org9a9bcf6"><span class="section-number-3">6.2</span> Cask</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 <a href="https://github.com/cask/cask">Cask</a> はファイルにインストールしたいパッケージ名を記述し，コマンドラインからコマンドを叩くことでパッケージをインストールする．<br />
@@ -587,8 +588,8 @@ M-x package-list-packages
 自分はパッケージ管理ツールとしての側面しか知らないため，ここでもその方向で説明していく．<br />
 </p>
 </div>
-<div id="outline-container-org0e50ed6" class="outline-4">
-<h4 id="org0e50ed6"><span class="section-number-4">6.2.1</span> インストール</h4>
+<div id="outline-container-org49b19f1" class="outline-4">
+<h4 id="org49b19f1"><span class="section-number-4">6.2.1</span> インストール</h4>
 <div class="outline-text-4" id="text-6-2-1">
 <p>
 インストールするには，<br />
@@ -613,8 +614,8 @@ curl でインストールした場合，パスを通す必要があるかもし
 </div>
 </div>
 
-<div id="outline-container-orgd2e9010" class="outline-4">
-<h4 id="orgd2e9010"><span class="section-number-4">6.2.2</span> 初期化</h4>
+<div id="outline-container-org609570b" class="outline-4">
+<h4 id="org609570b"><span class="section-number-4">6.2.2</span> 初期化</h4>
 <div class="outline-text-4" id="text-6-2-2">
 <p>
 始めに <code>~/.emacs.d</code> で Cask を初期化する必要がある．<br />
@@ -631,8 +632,8 @@ $ cask init
 </p>
 </div>
 </div>
-<div id="outline-container-org599adae" class="outline-4">
-<h4 id="org599adae"><span class="section-number-4">6.2.3</span> インストールするパッケージの指定</h4>
+<div id="outline-container-orge841e92" class="outline-4">
+<h4 id="orge841e92"><span class="section-number-4">6.2.3</span> インストールするパッケージの指定</h4>
 <div class="outline-text-4" id="text-6-2-3">
 <p>
 <code>Cask</code> ファイルには，最初からいくつかのパッケージが書かれている．<br />
@@ -700,8 +701,8 @@ $ cask init
 </div>
 </div>
 </div>
-<div id="outline-container-org0c2145c" class="outline-4">
-<h4 id="org0c2145c"><span class="section-number-4">6.2.4</span> パッケージのインストール</h4>
+<div id="outline-container-org86b01dd" class="outline-4">
+<h4 id="org86b01dd"><span class="section-number-4">6.2.4</span> パッケージのインストール</h4>
 <div class="outline-text-4" id="text-6-2-4">
 <p>
 <code>Cask</code> ファイルにインストールしたいパッケージを記述したら，<br />
@@ -717,8 +718,8 @@ $ cask install
 </p>
 </div>
 </div>
-<div id="outline-container-orgfa55644" class="outline-4">
-<h4 id="orgfa55644"><span class="section-number-4">6.2.5</span> Emacs の初期化ファイルの設定</h4>
+<div id="outline-container-org3c820a3" class="outline-4">
+<h4 id="org3c820a3"><span class="section-number-4">6.2.5</span> Emacs の初期化ファイルの設定</h4>
 <div class="outline-text-4" id="text-6-2-5">
 <p>
 Cask でインストールしたパッケージを Emacs から使えるようにするために， <code>~/.emacs.d/init.el</code> に次のコードを追加する必要がある．<br />
@@ -739,8 +740,8 @@ Cask でインストールしたパッケージを Emacs から使えるよう�
 </p>
 </div>
 </div>
-<div id="outline-container-org0c56dfe" class="outline-4">
-<h4 id="org0c56dfe"><span class="section-number-4">6.2.6</span> コマンド</h4>
+<div id="outline-container-orgb14b232" class="outline-4">
+<h4 id="orgb14b232"><span class="section-number-4">6.2.6</span> コマンド</h4>
 <div class="outline-text-4" id="text-6-2-6">
 <ul class="org-ul">
 <li><p>
@@ -782,8 +783,8 @@ $ cask list
 </div>
 </div>
 
-<div id="outline-container-org39c44b8" class="outline-4">
-<h4 id="org39c44b8"><span class="section-number-4">6.2.7</span> <span class="todo TODO">TODO</span> Pallet</h4>
+<div id="outline-container-org7e477d1" class="outline-4">
+<h4 id="org7e477d1"><span class="section-number-4">6.2.7</span> <span class="todo TODO">TODO</span> Pallet</h4>
 <div class="outline-text-4" id="text-6-2-7">
 <p>
 <b>参考</b><br />
@@ -798,8 +799,8 @@ $ cask list
 </div>
 </div>
 
-<div id="outline-container-org499269b" class="outline-3">
-<h3 id="org499269b"><span class="section-number-3">6.3</span> El-Get</h3>
+<div id="outline-container-orgac1b5ac" class="outline-3">
+<h3 id="orgac1b5ac"><span class="section-number-3">6.3</span> El-Get</h3>
 <div class="outline-text-3" id="text-6-3">
 <p>
 El-Get は Cask が Python に依存しているのに対して Emacs Lisp のみで実装されている．<br />
@@ -812,8 +813,8 @@ Github の <a href="https://github.com/dimitri/el-get">el-get</a> の README.md 
 </p>
 </div>
 
-<div id="outline-container-orgf0417f6" class="outline-4">
-<h4 id="orgf0417f6"><span class="section-number-4">6.3.1</span> インストール</h4>
+<div id="outline-container-orge67137f" class="outline-4">
+<h4 id="orge67137f"><span class="section-number-4">6.3.1</span> インストール</h4>
 <div class="outline-text-4" id="text-6-3-1">
 <p>
 <code>~/.emacs.d/init.el</code> に以下のコードを追加する．<br />
@@ -841,8 +842,8 @@ El-Get のインストールに必要なことはこれだけである．<br />
 </div>
 </div>
 
-<div id="outline-container-org2251587" class="outline-4">
-<h4 id="org2251587"><span class="section-number-4">6.3.2</span> パッケージの指定</h4>
+<div id="outline-container-orge945cc9" class="outline-4">
+<h4 id="orge945cc9"><span class="section-number-4">6.3.2</span> パッケージの指定</h4>
 <div class="outline-text-4" id="text-6-3-2">
 <p>
 El-Get でインストールするパッケージを指定する方法は，<br />
@@ -890,8 +891,8 @@ El-Get でインストールするパッケージを指定する方法は，<br 
 </div>
 </div>
 
-<div id="outline-container-orgc1c5320" class="outline-4">
-<h4 id="orgc1c5320"><span class="section-number-4">6.3.3</span> 基本的な使い方</h4>
+<div id="outline-container-org1626d25" class="outline-4">
+<h4 id="org1626d25"><span class="section-number-4">6.3.3</span> 基本的な使い方</h4>
 <div class="outline-text-4" id="text-6-3-3">
 <ul class="org-ul">
 <li><code>M-x el-get-install</code> <br />
@@ -912,8 +913,8 @@ El-Get 自身のアップデート．<br /></li>
 </div>
 </div>
 
-<div id="outline-container-org848a158" class="outline-4">
-<h4 id="org848a158"><span class="section-number-4">6.3.4</span> パッケージの設定</h4>
+<div id="outline-container-org7f8e333" class="outline-4">
+<h4 id="org7f8e333"><span class="section-number-4">6.3.4</span> パッケージの設定</h4>
 <div class="outline-text-4" id="text-6-3-4">
 <p>
 El-Get にはインストールしたパッケージに対する設定をわかりやすく管理するための機能があります．<br />
@@ -923,17 +924,17 @@ El-Get にはインストールしたパッケージに対する設定をわか�
 </div>
 </div>
 </div>
-<div id="outline-container-orge626dbd" class="outline-2">
-<h2 id="orge626dbd"><span class="section-number-2">7</span> 設定</h2>
+<div id="outline-container-org2746072" class="outline-2">
+<h2 id="org2746072"><span class="section-number-2">7</span> 設定</h2>
 <div class="outline-text-2" id="text-7">
 </div>
 
-<div id="outline-container-orgd99bdd3" class="outline-3">
-<h3 id="orgd99bdd3"><span class="section-number-3">7.1</span> <span class="todo TODO">TODO</span> 基本的な設定</h3>
+<div id="outline-container-org47ab40c" class="outline-3">
+<h3 id="org47ab40c"><span class="section-number-3">7.1</span> <span class="todo TODO">TODO</span> 基本的な設定</h3>
 <div class="outline-text-3" id="text-7-1">
 <p>
 ここでは，Emacs を使っている多くの人が行っているであろう基本的な設定をする．<br />
-つまり，追加でダウンロードしたパッケージに関する設定ではなく，Emacs 本体のみに対して適用される設定についてのみ触れる． <br />
+つまり，追加でダウンロードしたパッケージに関する設定ではなく，Emacs 本体のみに対して適用される設定についてのみ触れる．<br />
 既に少しだけ書いているが，Emacs の設定は Emacs Lisp と呼ばれる Lisp の方言の一つを用いて行う．<br />
 以下のコードを初期化ファイルに追加で記述する．<br />
 </p>
@@ -1031,13 +1032,13 @@ El-Get にはインストールしたパッケージに対する設定をわか�
 </div>
 </div>
 
-<div id="outline-container-org93cdf9e" class="outline-2">
-<h2 id="org93cdf9e"><span class="section-number-2">8</span> パッケージ</h2>
+<div id="outline-container-orgee018e6" class="outline-2">
+<h2 id="orgee018e6"><span class="section-number-2">8</span> パッケージ</h2>
 <div class="outline-text-2" id="text-8">
 </div>
 
-<div id="outline-container-org8269191" class="outline-3">
-<h3 id="org8269191"><span class="section-number-3">8.1</span> 雑にパッケージ紹介</h3>
+<div id="outline-container-org2b8a525" class="outline-3">
+<h3 id="org2b8a525"><span class="section-number-3">8.1</span> 雑にパッケージ紹介</h3>
 <div class="outline-text-3" id="text-8-1">
 <p>
 ここではいくつかのパッケージを名前を挙げる程度に紹介する．<br />
@@ -1120,7 +1121,7 @@ Emacs 標準パッケージ．シンプルな印象．あまり弄ったこと�
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Takahashi</p>
-<p class="date">Created: 2017-07-12 水 21:09</p>
+<p class="date">Created: 2017-07-12 水 21:13</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

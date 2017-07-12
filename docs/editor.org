@@ -1,4 +1,5 @@
 # -*- mode: org; coding: utf-8-unix -*-
+#+OPTIONS: \n:t
 
 * 注意
   *これはポエムです．*

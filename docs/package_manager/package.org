@@ -1,4 +1,6 @@
 # -*- mode: org; coding: utf-8-unix -*-
+#+OPTIONS: \n:t
+
 * package.el
   Emacs 24 から標準で使えるパッケージ管理ツール．
   自分はまともに使ったことがないので， [[http://emacs-jp.github.io/packages/package-management/package-el.html][package.el]] を参考に進めてみる．

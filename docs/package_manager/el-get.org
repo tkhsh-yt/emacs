@@ -1,4 +1,5 @@
 # -*- mode: org; coding: utf-8-unix -*-
+#+OPTIONS: \n:t
 
 * El-Get
 El-Get は Cask が Python に依存しているのに対して Emacs Lisp のみで実装されている．

@@ -1,4 +1,5 @@
 # -*- mode: org; coding: utf-8-unix -*-
+#+OPTIONS: \n:t
 
 * Cask
 [[https://github.com/cask/cask][Cask]] はファイルにインストールしたいパッケージ名を記述し，コマンドラインからコマンドを叩くことでパッケージをインストールする．
