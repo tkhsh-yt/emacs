@@ -1,9 +1,9 @@
 # -*- mode: org; coding: utf-8-unix -*-
 
 * El-Get
-El-Get は Cask が Python に依存しているのに対して Emacs Lisp のみで実装されている．\\
-El-Get の詳しい説明については，[[http://tarao.hatenablog.com/entry/20150221/1424518030][貳佰伍拾陸夜日記 - Cask はもう古い、これからは El-Get - いまどきの Emacs パッケージ管理]] を参考にするのがよい．\\
-また，そのサイトで言われているように Cask から El-Get への移行は簡単に行える． \\
+El-Get は Cask が Python に依存しているのに対して Emacs Lisp のみで実装されている．
+El-Get の詳しい説明については，[[http://tarao.hatenablog.com/entry/20150221/1424518030][貳佰伍拾陸夜日記 - Cask はもう古い、これからは El-Get - いまどきの Emacs パッケージ管理]] を参考にするのがよい．
+また，そのサイトで言われているように Cask から El-Get への移行は簡単に行える． 
 
 Github の [[https://github.com/dimitri/el-get][el-get]] の README.md を参考にしつつ，パッケージをインストールするまでの流れを説明する．
 
@@ -60,21 +60,21 @@ Github の [[https://github.com/dimitri/el-get][el-get]] の README.md を参考
 
 ** 基本的な使い方
    
-   - =M-x el-get-install= \\
+   - =M-x el-get-install= 
      パッケージ名を指定してインストール．
-   - =M-x el-get remove= \\
+   - =M-x el-get remove= 
      インストール済みパッケージの名前を指定してパッケージの削除．
-   - =M-x el-get-reinstall= \\
+   - =M-x el-get-reinstall= 
      インストール済みパッケージの再インストール．
-   - =M-x el-get-self-update= \\
+   - =M-x el-get-self-update= 
      El-Get 自身のアップデート．
-   - =M-x el-get-update= \\
+   - =M-x el-get-update= 
      インストール済みのパッケージ名を指定して更新．
-   - =M-x el-get-update-all= \\
+   - =M-x el-get-update-all= 
      インストール済みの全てのパッケージを更新．
-   - =M-x el-get-list-packages= \\
+   - =M-x el-get-list-packages= 
      インストール可能なパッケージのリストを表示．
 
 ** パッケージの設定
-   El-Get にはインストールしたパッケージに対する設定をわかりやすく管理するための機能があります．\\
+   El-Get にはインストールしたパッケージに対する設定をわかりやすく管理するための機能があります．
    まだ，パッケージの設定について話していないため，これについては後で書きます．

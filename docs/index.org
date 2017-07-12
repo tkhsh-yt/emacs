@@ -3,6 +3,6 @@
 #+TITLE: Emacs
 #+AUTHOR: Takahashi
 #+OPTIONS: ^:nil
-#+SETUPFILE: ./style.org
+#+SETUPFILE: ./theme.org
 
 #+INCLUDE: emacs.org
