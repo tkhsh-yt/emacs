@@ -3,7 +3,9 @@
 
 * package.el
   Emacs 24 から標準で使えるパッケージ管理ツール．
+
   自分はまともに使ったことがないので， [[http://emacs-jp.github.io/packages/package-management/package-el.html][package.el]] を参考に進めてみる．
+
   単体でパッケージをインストールする方法は簡単で，
   
   #+BEGIN_SRC
@@ -11,7 +13,13 @@
   #+END_SRC
 
   を実行する．すると =Install package:= とミニバッファに表示される．
-  ここで =TAB= を押すとパッケージの一覧が表示されるため，その中からインストールしたいパッケージを見つけ，パッケージ名を入力することでパッケージをインストールすることができる．
+
+  ここで =TAB= を押すとパッケージの一覧が表示されるため，
+
+  その中からインストールしたいパッケージを見つけ，
+
+  パッケージ名を入力することでパッケージをインストールすることができる．
+
   また，パッケージを一覧から複数選択してインストール，アンインストールしたい場合には，
 
   #+BEGIN_SRC
@@ -39,7 +47,9 @@
   | =q=, =z= | 終了                               |
 
   =package.el= はデフォルトで [[http://elpa.gnu.org/packages/][elpha.gnu.org]] からパッケージを取得する．
+
   見てもらえればわかるが，登録されているパッケージが少ない．
+
   [[http://emacs-jp.github.io/packages/package-management/package-el.html][package.el]] で説明されているようにリポジトリを追加する．各リポジトリについては，リンク先を読むとわかる．
 
   #+BEGIN_SRC emacs-lisp
