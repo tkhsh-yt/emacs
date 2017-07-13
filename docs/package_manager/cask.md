@@ -35,7 +35,7 @@
 
    自分の環境で実行した場合に生成された `Cask` ファイルは以下のようになっていた．
 
-   ```
+   ```elisp
    (source gnu)
    (source melpa)
 
@@ -68,20 +68,20 @@
    どれもメジャーな（？）パッケージで，あって困ることはないと思うので，特に消す必要はないだろう．  
    `Cask` ファイルを見るとわかるが，Cask ではインストールしたいパッケージを
 
-   ```
+   ```elisp
    (depends-on "package name") 
    ```
 
    の形で記述する．バージョンの指定やリポジトリの URL を指定することもできる．
 
-   ```
+   ```elisp
    (depends-on "package name" "version")
    (depends-on "package name" :git "url")
    ```
      
    また，リポジトリの追加も行える．
      
-   ```
+   ```elisp
    (source repository)
    ```
 ### パッケージのインストール
@@ -96,7 +96,7 @@
 ### Emacs の初期化ファイルの設定
    Cask でインストールしたパッケージを Emacs から使えるようにするために， `~/.emacs.d/init.el` に次のコードを追加する必要がある．
      
-   ```
+   ```elisp
    ;; macOS の場合
    (require 'cask)
    ;; Linux の場合

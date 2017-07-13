@@ -40,7 +40,7 @@ M-x package-list-packages
 見てもらえればわかるが，登録されているパッケージが少ない．  
 [package.el](http://emacs-jp.github.io/packages/package-management/package-el.html) で説明されているようにリポジトリを追加する．各リポジトリについては，リンク先を読むとわかる．
 
-```
+```elisp
 (require 'package)
 
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -54,7 +54,7 @@ M-x package-list-packages
 `elpha` 以外のリポジトリからパッケージをインストールすることができるようになる．  
 起動時に自動で指定したパッケージをインストールするためには， `~/.emacs.d/init.el` に以下のように記述するとよい．
     
-```
+```elisp
 (require 'package)
   
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)

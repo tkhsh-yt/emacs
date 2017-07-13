@@ -8,7 +8,7 @@ Github の [el-get](https://github.com/dimitri/el-get) の README.md を参考�
 ### インストール
    `~/.emacs.d/init.el` に以下のコードを追加する．
    
-   ```
+   ```elisp
    (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
    (unless (require 'el-get nil 'noerror)
@@ -28,7 +28,7 @@ Github の [el-get](https://github.com/dimitri/el-get) の README.md を参考�
 ### パッケージの指定
    El-Get でインストールするパッケージを指定する方法は，
 
-   ```
+   ```elisp
    (el-get-bundle package-name)
    ```
    
@@ -36,19 +36,19 @@ Github の [el-get](https://github.com/dimitri/el-get) の README.md を参考�
 
    例えば，magit をインストールしたいときには，
 
-   ```
+   ```elisp
    (el-get-bundle magit)
    ```
    
    と書く． Github からパッケージをインストールしたい場合には `所有者/リポジトリ` の形で指定する．
 
-   ```
+   ```elisp
    (el-get-bundle fnwiya/hatena-blog-mode)
    ```
 
    また，配布元を指定する場合には，
 
-   ```
+   ```elisp
    (el-get-bundle elpa:org)
    ```
 
