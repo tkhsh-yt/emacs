@@ -1,8 +1,0 @@
-# -*- mode: org; coding: utf-8-unix -*-
-
-#+TITLE: Emacs
-#+AUTHOR: Takahashi
-#+OPTIONS: ^:nil
-#+SETUPFILE: ./theme.org
-
-#+INCLUDE: emacs.org
